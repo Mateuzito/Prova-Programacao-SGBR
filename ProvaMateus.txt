@@ -1,0 +1,67 @@
+Função de soma de valores:
+
+function soma($valor_1, $valor_2){
+
+  $total = $valor_1 + $valor_2;
+
+  return $total;
+
+////////////////////////////////////////////////////////////////
+
+Código do botão que ao clicar explica qual a diferença entre função e procedure com o alert
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Definição</title>
+<script>
+function alert()
+{
+alert("Função é usada para calcular um valor com base num determinado input, já a procedure armazena tarefas repetitivas, sendo basicamente como variáveis, no fim em resumo funções retornam valores, procedures não.");
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="alert()" value="ALERT" /></body>
+</html>
+
+////////////////////////////////////////////////////////////////
+
+Função para ordenar o seguinte array de forma crescente: [0.5, 7, 2, 35, 3.5, 4, 40, 24]
+
+var array= new Array(0.5, 7, 2, 35, 3.5, 4, 40, 24);
+document.write(array);
+array.sort(); //função para ordenar em ordem crescente, podendo ser substituída por "Reverse" em caso de ordem decrescente.
+document.write(array);
+
+////////////////////////////////////////////////////////////////
+
+Função para somar elementos do array: : [0.5, 7, 2, 35, 3.5, 4, 40, 24]
+
+var array = [0.5, 7, 2, 35, 3.5, 4, 40, 24]; //inserindo os elementos a serem somados na variável
+var soma = array.reduce(function(soma, i) { 
+    return soma + i; //somatório usando o reduce
+});
+console.log(soma);
+
+Obs: Tive que usar fonte de pesquisa para saber o funcionamento da função reduce
+
+////////////////////////////////////////////////////////////////
+
+Função de multiplicação de dois valores;
+
+function soma($valor_1, $valor_2){
+
+  $total = $valor_1 * $valor_2;
+
+  return $total;
+
+////////////////////////////////////////////////////////////////
+
+Função que remove elementos < 20: [0.5, 7, 2, 35, 3.5, 4, 40, 24]
+
+var array =  [0.5, 7, 2, 35, 3.5, 4, 40, 24]
+array.shift();
+console.log(array);
+
+OBS: Fiquei na duvida quanto a essa questão...
